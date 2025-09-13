@@ -23,6 +23,16 @@ const Navbar = () => {
 
           <button className='block md:hidden ml-3'>Menu</button>
         </div>
+        
+        {/* mobile menu */}
+
+        <ul className='flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-0 top-0 bottom-0 w-64 z-50 h-screen bg-rose-200 transition duration-500'>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">My Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
     </>
   )

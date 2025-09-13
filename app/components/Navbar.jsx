@@ -20,6 +20,8 @@ const Navbar = () => {
           <button>Dark</button>
 
           <a href="#contact" className='hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4'>Contact</a>
+
+          <button className='block md:hidden ml-3'>Menu</button>
         </div>
       </nav>
     </>

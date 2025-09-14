@@ -46,9 +46,9 @@ export const serviceCards = [
 ];
 
 export const infoList = [
-  { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript, React, Next.js'},
-  { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Education', description: 'Makers Academy'},
-  { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'More than 20 repos on github'},
+  { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Languages', description: 'Apex, Ruby, HTML, CSS, JavaScript, React, SQL, Wordpress, Next.js'},
+  { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Education', description: 'GCSEs, ALevels, Makers Academy, Salesforce Trailheads'},
+  { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'More than 25 repos on github'},
 ];
 
 export const toolsData = [

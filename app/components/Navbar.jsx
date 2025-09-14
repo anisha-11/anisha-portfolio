@@ -27,12 +27,12 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm" : ""}`}>
+      <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScroll ? "bg-fuchsia-200 bg-opacity-50 backdrop-blur-lg shadow-sm" : ""}`}>
         <a href="#top">
           <Image src={assets.logo} alt="" className='w-28 cursor-pointer mr-14' />
         </a>
 
-        <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "" : "bg-amber-100 shadow-sm bg-opacity-50"}`}>
+        <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "" : "bg-fuchsia-700 text-white shadow-sm bg-opacity-50"}`}>
           <li><a href="#top">Home</a></li>
           <li><a href="#about">About me</a></li>
           <li><a href="#services">Services</a></li>

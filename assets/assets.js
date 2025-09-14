@@ -8,7 +8,12 @@ import vs_code from './vs-code.png';
 
 export const assets = {
   profile_picture,
-  logo
+  logo,
+  project_icon,
+  project_icon_dark,
+  slack,
+  table_plus,
+  vs_code
 };
 
 export const workCards = [

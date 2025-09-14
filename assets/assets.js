@@ -1,5 +1,6 @@
 import profile_picture from './profile-picture.jpeg';
-import logo from './circle-logo.png';
+import circle_logo from './circle-logo.png';
+import logo from './logo.png';
 import project_icon from './project-icon.png';
 import project_icon_dark from './project-icon-dark.png';
 import slack from './slack.png';
@@ -8,6 +9,7 @@ import vs_code from './vs-code.png';
 
 export const assets = {
   profile_picture,
+  circle_logo,
   logo,
   project_icon,
   project_icon_dark,
@@ -20,19 +22,19 @@ export const workCards = [
   {
     title: 'Project 1',
     description: 'Website',
-    bgImage: '/circle-logo.png'
+    bgImage: '/logo.png'
   },
   
   {
     title: 'Project 2',
     description: 'App',
-    bgImage: '/circle-logo.png'
+    bgImage: '/logo.png'
   },
 
   {
     title: 'Project 3',
     description: 'Mobile App',
-    bgImage: '/circle-logo.png'
+    bgImage: '/logo.png'
   },
 ];
 

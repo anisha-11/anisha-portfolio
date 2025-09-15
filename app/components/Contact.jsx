@@ -28,26 +28,26 @@ const Contact = () => {
 
   return (
     <div id='contact' className='w-full px-[12%] py-10 scroll-mt-20'>
-      <h4 className='text-center mb-2 text-lg'>Let's Connect</h4>
-      <h2 className='text-center text-5xl'>Get In Touch</h2> 
+      <h4 className='text-center mb-2 text-lg text-[#22D3EE]'>Let's Connect</h4>
+      <h2 className='text-center text-5xl font-bold text-[#8B5CF6]'>Get In Touch</h2> 
       <p className='text-center max-w-2xl mx-auto mt-5 mb-12'>
       I'd love to hear from you! If you have any questions, comments or feedback, please fill the form below</p>
 
       <form onSubmit={onSubmit} className='max-w-2xl mx-auto'>
         <div className='grid grid-cols-2 gap-6 mt-10 mb-8'>
           <input type="text" placeholder='Enter your name' required 
-          className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-amber-300' name='name'/>
+          className='flex-1 p-3 outline-none border-[0.5px] border-[#22D3EE] rounded-md focus:border-[#8B5CF6] focus:shadow-[0_0_10px_#8B5CF6] transition-colors duration-300' name='name'/>
           <input type="email" placeholder='Enter your email' required 
-          className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-amber-300' name='email'/>
+          className='flex-1 p-3 outline-none border-[0.5px] border-[#22D3EE] rounded-md focus:border-[#8B5CF6] focus:shadow-[0_0_10px_#8B5CF6] transition-colors duration-300' name='email'/>
         </div>
         <textarea rows="6" placeholder='Enter your message' required
-        className='w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-amber-300 mb-6' name='message'>
+        className='w-full p-4 outline-none border-[0.5px] border-[#22D3EE] rounded-md focus:border-[#8B5CF6] focus:shadow-[0_0_10px_#8B5CF6] transition-colors duration-300 mb-6' name='message'>
         </textarea>
         <button type='submit' 
-        className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto'>
+        className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-gradient-to-r from-[#8B5CF6] to-[#22D3EE] font-medium rounded-full mx-auto shadow-md hover:shadow-[#22D3EE]/60 transition-all duration-300'>
         Submit
         </button>
-        <p className='mt-4'>{result}</p>
+        <p className='mt-4 text-center'>{result}</p>
       </form>
     </div>
   )

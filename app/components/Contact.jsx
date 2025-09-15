@@ -27,7 +27,11 @@ const Contact = () => {
   };
 
   return (
-    <div id='contact' className='w-full px-[12%] py-10 scroll-mt-20'>
+    <div id='contact' className='w-full px-[12%] py-10 scroll-mt-20 relative overflow-hidden'>
+      <div className='absolute top-0 left-1/4 w-56 h-56 bg-[#8B5CF6]/60 rounded-full filter blur-3xl animate-floating-slow -z-10'
+      style={{ animation: 'floatingSlow 6s ease-in-out infinite' }}></div>
+      <div className='absolute bottom-0 right-1/4 w-72 h-72 bg-[#22D3EE]/60 rounded-full filter blur-3xl animate-floating-reverse -z-10'
+      style={{ animation: 'floatingReverse 8s ease-in-out infinite' }}></div>
       <h4 className='text-center mb-2 text-lg text-[#22D3EE]'>Let's Connect</h4>
       <h2 className='text-center text-5xl font-bold text-[#8B5CF6]'>Get In Touch</h2> 
       <p className='text-center max-w-2xl mx-auto mt-5 mb-12'>
@@ -49,6 +53,17 @@ const Contact = () => {
         </button>
         <p className='mt-4 text-center'>{result}</p>
       </form>
+
+      <style jsx>{`
+        @keyframes floatingSlow {
+          0%, 100% { transform: translateY(0px) translateX(0px); }
+          50% { transform: translateY(-20px) translateX(10px); }
+        }
+        @keyframes floatingReverse {
+          0%, 100% { transform: translateY(0px) translateX(0px); }
+          50% { transform: translateY(15px) translateX(-10px); }
+        }
+    `}</style>
     </div>
   )
 }

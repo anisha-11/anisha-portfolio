@@ -32,7 +32,7 @@ const Navbar = () => {
           <Image src={assets.logo} alt="" className='w-28 cursor-pointer mr-14' />
         </a>
 
-        <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "" : "bg-[#0D0D0D] text-white shadow-sm bg-opacity-50"}`}>
+        <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "text-white" : "bg-[#0D0D0D] text-white shadow-sm bg-opacity-50"}`}>
           <li className='hover:text-[#22D3EE]'><a href="#top">Home</a></li>
           <li className='hover:text-[#22D3EE]'><a href="#about">About me</a></li>
           <li className='hover:text-[#22D3EE]'><a href="#services">Services</a></li>

@@ -15,7 +15,7 @@ const Header = () => {
       <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
         <a href="#contact" className='px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2'>Contact
         {/* <Image src={assets.arrow} alt="" className='w-4'/> */}</a>
-        <a href="add the file for cv - input later" download className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2'>CV 
+        <a href="/cv.pdf" download className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2'>CV 
         {/* <Image src={assets.download-icon} alt="" className='w-4'/> */}</a>
       </div>
     </div>

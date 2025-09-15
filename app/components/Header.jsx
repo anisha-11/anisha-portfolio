@@ -4,7 +4,13 @@ import Image from 'next/image';
 
 const Header = () => {
   return (
-    <div className='w-full  text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 bg-[#121212]'>
+    <div className='relative w-full text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 '>
+      <div className='absolute top-0 left-1/4 w-56 h-56 bg-[#8B5CF6]/60 rounded-full filter blur-3xl -z-10'
+      style={{ animation: 'floatingSlow 6s ease-in-out infinite' }}>
+    </div>
+    <div className='absolute bottom-0 right-1/4 w-72 h-72 bg-[#22D3EE]/60 rounded-full filter blur-3xl -z-10'
+      style={{ animation: 'floatingReverse 8s ease-in-out infinite' }}>
+    </div>
       <div>
       <Image src={assets.profile_picture} alt="" className=' rounded-full w-32 ring-2 ring-[#06B6D4]' />
       </div>
@@ -18,6 +24,17 @@ const Header = () => {
         <a href="/cv.pdf" download className='px-10 py-3 border border-[#22D3EE] text-white hover:bg-[#0891B2] hover:text-white transition rounded-full flex items-center gap-2'>CV 
         {/* <Image src={assets.download-icon} alt="" className='w-4'/> */}</a>
       </div>
+
+      <style jsx>{`
+        @keyframes floatingSlow {
+          0%, 100% { transform: translateY(0px) translateX(0px); }
+          50% { transform: translateY(-20px) translateX(10px); }
+        }
+        @keyframes floatingReverse {
+          0%, 100% { transform: translateY(0px) translateX(0px); }
+          50% { transform: translateY(15px) translateX(-10px); }
+        }
+    `}</style>
     </div>
   )
 }

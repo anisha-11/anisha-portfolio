@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${outfit.className} ${ovo.className} antialiased leading-8 overflow-x-hidden`}
+        className={`${outfit.className} ${ovo.className} antialiased leading-8 overflow-x-hidden bg-[#121212] text-[#F5F5F5]`}
       >
         {children}
       </body>

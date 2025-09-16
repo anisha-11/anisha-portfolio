@@ -43,7 +43,7 @@ const Navbar = () => {
         <div className='flex items-center gap-4'>
           <button className='text-white hover:text-[#22D3EE]'>Dark</button>
 
-          <a href="#contact" className='hidden lg:flex items-center gap-3 px-10 py-2.5 border bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] text-white shadow-md rounded-full ml-4'>Contact</a>
+          <a href="#contact" className='hidden lg:flex items-center gap-3 px-10 py-2.5 bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] text-white shadow-md rounded-full ml-4'>Contact</a>
 
           <button className='block md:hidden ml-3 text-white' onClick={openMenu}>Menu</button>
         </div>

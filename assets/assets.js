@@ -1,6 +1,7 @@
 import profile_picture from './profile-picture.jpeg';
 import circle_logo from './circle-logo.png';
 import logo from './logo.png';
+import logo_white from './logo-white.png';
 import project_icon from './project-icon.png';
 import project_icon_dark from './project-icon-dark.png';
 import slack from './slack.png';
@@ -11,6 +12,7 @@ export const assets = {
   profile_picture,
   circle_logo,
   logo,
+  logo_white,
   project_icon,
   project_icon_dark,
   slack,

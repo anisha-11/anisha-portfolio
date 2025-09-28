@@ -56,3 +56,20 @@ export const infoList = [
 export const toolsData = [
   assets.slack, assets.table_plus, assets.vs_code
 ];
+
+// export const workExperience = [
+//   { title: 'Tutoring', description: 'Provided maths tutoring for GCSE students.' },
+//   { title: 'Web Dev Job', description: 'Built WordPress websites and handled client projects.' },
+//   { title: 'Salesforce Dev', description: 'Currently working on Salesforce projects and automation.' },
+// ];
+
+// export const volunteering = [
+//   { title: 'Non-Profit', description: 'Contributed to local charity projects and events.' },
+//   { title: 'Local Temple', description: 'Assisted with community events and workshops.' },
+// ];
+
+// export const education = [
+//   { title: 'GCSEs', description: 'Maths, English, Science, and others.' },
+//   { title: 'A-Levels', description: 'Further Maths, Computer Science, Physics.' },
+//   { title: 'Makers Academy', description: 'Completed intensive web development bootcamp.' },
+// ];

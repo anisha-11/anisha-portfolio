@@ -5,11 +5,8 @@ import React from 'react'
 const Work = () => {
   return (
     <div id='work' className='w-full px-[12%] py-10 scroll-mt-20'>
-      <h4 className='text-center mb-2 text-lg text-[#22D3EE]'>My Portfolio</h4>
-      <h2 className='text-center text-5xl font-bold text-[#8B5CF6]'>My Latest Work</h2> 
-      <p className='text-center max-w-2xl mx-auto mt-5 mb-12'>
-      Welcome to my software engineering portfolio! Explore my projects showcasing my 
-      expertise in development.</p>
+      <h2 className='text-center text-5xl font-bold text-[#8B5CF6]'>Projects</h2> 
+      <p className='text-center max-w-2xl mx-auto mt-5 mb-12'>Explore my projects showcasing my expertise in development.</p>
 
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 my-10'>
         {workCards.map((project, index)=>(

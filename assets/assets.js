@@ -7,6 +7,9 @@ import project_icon_dark from './project-icon-dark.png';
 import slack from './slack.png';
 import table_plus from './tableplus.png';
 import vs_code from './vs-code.png';
+import chitter from './chitter.png';
+import acebook from './acebook-new.png';
+import reel_places from './reelplaces-ss.png';
 
 export const assets = {
   profile_picture,
@@ -17,7 +20,10 @@ export const assets = {
   project_icon_dark,
   slack,
   table_plus,
-  vs_code
+  vs_code,
+  chitter,
+  acebook,
+  reel_places
 };
 
 export const workCards = [

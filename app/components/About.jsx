@@ -3,85 +3,6 @@ import React from 'react';
 import Image from 'next/image';
 
 const About = () => {
-//   const workExperience = [
-//     { title: 'Tutoring', description: 'Provided maths tutoring for GCSE students.' },
-//     { title: 'Web Dev Job', description: 'Built WordPress websites and handled client projects.' },
-//     { title: 'Salesforce Dev', description: 'Currently working on Salesforce projects and automation.' },
-//   ]
-
-//   const volunteering = [
-//     { title: 'Non-Profit', description: 'Contributed to local charity projects and events.' },
-//     { title: 'Local Temple', description: 'Assisted with community events and workshops.' },
-//   ]
-
-//   const education = [
-//     { title: 'GCSEs', description: 'Maths, English, Science, and others.' },
-//     { title: 'A-Levels', description: 'Further Maths, Computer Science, Physics.' },
-//     { title: 'Makers Academy', description: 'Completed intensive web development bootcamp.' },
-//   ]
-
-//     const renderCard = (item, index) => (
-//     <div
-//       key={index}
-//       className='border border-[#22D3EE]/40 bg-white rounded-2xl px-8 py-8 cursor-pointer hover:scale-105 hover:shadow-lg hover:shadow-[#8B5CF6]/30 transition duration-300'
-//     >
-//       <h3 className='text-lg font-semibold mb-3 text-[#8B5CF6]'>{item.title}</h3>
-//       <p className='text-sm text-black'>{item.description}</p>
-//     </div>
-//   )
-
-//   return (
-//     <div id='about' className='w-full px-[12%] py-10 scroll-mt-20'>
-//       <h4 className='text-center mb-2 text-lg text-[#22D3EE]'>Introduction</h4>
-//       <h2 className='text-center text-5xl font-bold text-[#8B5CF6]'>About me</h2>
-
-//       <h3 className='text-2xl font-bold text-[#8B5CF6] mb-6'>Work Experience</h3>
-//         <div className='grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12'>
-//           {workExperience.map(renderCard)}
-//         </div>
-
-//       <h3 className='text-2xl font-bold text-[#8B5CF6] mb-6'>Volunteering</h3>
-//         <div className='grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12'>
-//           {volunteering.map(renderCard)}
-//         </div>
-
-//       <h3 className='text-2xl font-bold text-[#8B5CF6] mb-6'>Education</h3>
-//         <div className='grid grid-cols-1 sm:grid-cols-3 gap-6'>
-//           {education.map(renderCard)}
-//         </div>
-
-//       <div className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'>
-//         <div className='w-64 sm:w-80 rounded-3xl max-w-none'>
-//         <Image src={assets.profile_picture} alt="" className='w-full rounded-3xl border-2 border-[#22D3EE]/30 shadow-lg shadow-[#8B5CF6]/20'/></div>
-//         <div className='flex-1'>
-//         <p className='mb-10 max-w-2xl'>My tech journey began at Makers Academy, where I discovered my passion for web development. I started as a 
-//         Junior Web Developer, designing solutions tailored to clients’ needs and optimising websites for SEO. Driven by curiousity and a desire to 
-//         grow, I transitioned into Salesforce, becoming a Certified Developer. Today, I collaborate with a dynamic team of building features that 
-//         create real impact and drive meaningful business results.
-//         </p>
-//         <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
-//           {infoList.map(({icon, iconDark, title, description}, index)=>(
-//             <li className='border border-[22D3EE]/40 rounded-xl p-6 cursor-pointer hover:scale-105 transition duration-300 shadow-md shadow-black/40' key={index}>
-//               <Image src={icon} alt={title} className='w-7 mt-3'/>
-//               <h3 className='my-4 font-semibold text-[#8B5CF6]'>{title}</h3>
-//               <p className='text-sm'>{description}</p>
-//             </li>
-//           ))}
-//         </ul>
-
-//         <h4 className='my-6 text-lg text-[#22D3EE] font-semibold'>Tools used</h4>
-
-//         <ul className='flex items-center gap-3 sm:gap-5'>
-//           {toolsData.map((tool, index)=>(
-//             <li className='flex items-center justify-center w-12 sm:w-14 aspect-square border border-[#8B5CF6] rounded-lg cursor-pointer hover:scale-110 transition duration-300 shadow-md shadow-black/40' key={index}>
-//               <Image src={tool} alt='Tool' className='w-5 sm:w-7'/>
-//             </li>
-//           ))}
-//         </ul>
-//         </div>
-//       </div>
-//     </div>
-//   )
 
 const experience = [
   { role: "Salesforce Developer", company: "Revolent Group on placement to YOOX-Net-a-Porter", duration: "Mar 2024 - Present", description: "I'm part of an agile team building and optimising custom functionality with Apex programming, ensuring clean, maintable and efficient code by working closely with product owners to translate business requirements into tailored features and solutions." },
@@ -102,13 +23,13 @@ const volunteering = [
 
   return (
     <section className=" bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] text-white py-20 px-6 md:px-20">
-      <div id='about' className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12">
+      <div id='about' className="max-w-7xl mx-auto flex flex-col gap-12 items-center">
         
         {/* Right: Content */}
-        <div className="flex-1 space-y-8">
+        {/* <div> */}
           
           {/* Intro */}
-          <div>
+          <div className='flex flex-col gap-6 text-center max-w-3xl'>
             <h1 className='text-5xl font-bold mb-10'>About Me</h1>
             <h2 className="text-3xl font-bold mb-4">Hi, I'm Anisha!</h2>
             <p>My tech journey began at Makers Academy, where I discovered my passion for web development. I started as a Junior Web Developer, designing solutions tailored to clients’ needs and optimising websites for SEO. Driven by curiousity and a desire to grow, 
@@ -117,11 +38,11 @@ const volunteering = [
           </div>
           
           {/* Experience */}
-          <div>
-            <h3 className="text-2xl font-semibold mb-4">Work Experience</h3>
-            <div className="grid md:grid-cols-2 gap-4">
+          <div className='w-full'>
+            <h3 className="text-2xl font-semibold mb-6 text-center md:text-left">Work Experience</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {experience.map((job, idx) => (
-                <div key={idx} className="bg-gray-800 p-4 rounded-xl shadow hover:shadow-xl transition-shadow duration-300">
+                <div key={idx} className="bg-gray-800 p-4 rounded-xl shadow hover:shadow-xl transition-shadow duration-300 text-center md:text-left">
                   <h4 className="font-bold text-[#06B6D4]">{job.role}</h4>
                   <p className="text-gray-400">{job.company} | {job.duration}</p>
                   <p className="text-gray-300 mt-2">{job.description}</p>
@@ -132,10 +53,10 @@ const volunteering = [
           
           {/* Education */}
           <div>
-            <h3 className="text-2xl font-semibold mb-4">Education</h3>
-            <div className="grid md:grid-cols-2 gap-4">
+            <h3 className="text-2xl font-semibold mb-6 text-center md:text-left">Education</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {education.map((edu, idx) => (
-                <div key={idx} className="bg-gray-800 p-4 rounded-xl shadow hover:shadow-xl transition-shadow duration-300">
+                <div key={idx} className="bg-gray-800 p-4 rounded-xl shadow hover:shadow-xl transition-shadow duration-300 text-center md:text-left">
                   <h4 className="font-bold">{edu.degree}</h4>
                   <p className="text-gray-400">{edu.school} | {edu.duration}</p>
                   <p className="text-gray-300 mt-2">{edu.description}</p>
@@ -146,10 +67,10 @@ const volunteering = [
           
           {/* Volunteering */}
           <div>
-            <h3 className="text-2xl font-semibold mb-4">Volunteering</h3>
-            <div className="grid md:grid-cols-2 gap-4">
+            <h3 className="text-2xl font-semibold mb-6 text-center md:text-left">Volunteering</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {volunteering.map((vol, idx) => (
-                <div key={idx} className="bg-gray-800 p-4 rounded-xl shadow hover:shadow-xl transition-shadow duration-300">
+                <div key={idx} className="bg-gray-800 p-4 rounded-xl shadow hover:shadow-xl transition-shadow duration-300 text-center md:text-left">
                   <h4 className="font-bold">{vol.role}</h4>
                   <p className="text-gray-400">{vol.organization} | {vol.duration}</p>
                   <p className="text-gray-300 mt-2">{vol.description}</p>
@@ -158,7 +79,7 @@ const volunteering = [
             </div>
           </div>
           
-        </div>
+        {/* </div> */}
       </div>
     </section>
   );

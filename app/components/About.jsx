@@ -23,14 +23,14 @@ const volunteering = [
 
   return (
     <section className=" bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] text-white py-20 px-6 md:px-20">
-      <div id='about' className="max-w-7xl mx-auto flex flex-col gap-12 items-center">
+      <div id='about' className="max-w-7xl mx-auto flex flex-col gap-12">
         
         {/* Right: Content */}
-        {/* <div> */}
+        <div className='flex-1 space-y-8'>
           
           {/* Intro */}
-          <div className='flex flex-col gap-6 text-center max-w-3xl'>
-            <h1 className='text-5xl font-bold mb-10'>About Me</h1>
+          <div className='flex flex-col gap-6 text-center max-w-3xl md:text-left'>
+            <h1 className='text-5xl font-bold mb-6'>About Me</h1>
             <h2 className="text-3xl font-bold mb-4">Hi, I'm Anisha!</h2>
             <p>My tech journey began at Makers Academy, where I discovered my passion for web development. I started as a Junior Web Developer, designing solutions tailored to clients’ needs and optimising websites for SEO. Driven by curiousity and a desire to grow, 
             I transitioned into Salesforce, becoming a Certified Developer. Today, I collaborate with a dynamic team of building features that create real impact and drive meaningful business results.
@@ -79,7 +79,7 @@ const volunteering = [
             </div>
           </div>
           
-        {/* </div> */}
+        </div>
       </div>
     </section>
   );

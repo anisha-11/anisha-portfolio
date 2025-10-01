@@ -22,10 +22,10 @@ const Header = () => {
       <div className="flex-1 flex flex-col items-start text-left gap-4 mt-8 md:mt-0">
       {/* <h3 className='flex items-end gap-2 text-xl md:text-2xl mb-3'>Hi! I'm Anisha Hirani</h3> */}
       <h1 className='text-3xl sm:text-6xl lg:text-[66px] font-bold'>Hi! I'm Anisha Hirani</h1>
-      <p className='max-w-2xl text-[#D4D4D4]'> A Software Engineer based in London and currently working in Salesforce with the drive and motivation
-      to improve technology.</p>
+      <p className='max-w-2xl text-[#D4D4D4]'> My tech journey began at Makers Academy, where I discovered my passion for web development. I started as a Junior Web Developer, designing solutions tailored to clients’ needs and optimising websites for SEO. Driven by curiousity and a desire to grow, 
+            I transitioned into Salesforce, becoming a Certified Developer. Today, I collaborate with a dynamic team of building features that create real impact and drive meaningful business results.</p>
       <div className='flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-4'>
-        <a href="#contact" className='px-10 py-3 bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] rounded-full text-white font-medium shadow-md flex items-center gap-2'>Contact
+        <a href="#contact" className='px-10 py-3 bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] hover:from-[#06B6D4] hover:to-[#8B5CF6] rounded-full text-white font-medium shadow-md flex items-center gap-2'>Contact
         {/* <Image src={assets.arrow} alt="" className='w-4'/> */}</a>
         <a href="/cv.pdf" download className='px-10 py-3 border border-[#22D3EE] text-white hover:bg-[#0891B2] hover:text-white transition rounded-full flex items-center gap-2'>CV 
         {/* <Image src={assets.download-icon} alt="" className='w-4'/> */}</a>

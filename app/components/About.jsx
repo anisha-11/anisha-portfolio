@@ -122,7 +122,7 @@ const volunteering = [
             <div className="grid md:grid-cols-2 gap-4">
               {experience.map((job, idx) => (
                 <div key={idx} className="bg-gray-800 p-4 rounded-xl shadow hover:shadow-xl transition-shadow duration-300">
-                  <h4 className="font-bold">{job.role}</h4>
+                  <h4 className="font-bold text-[#06B6D4]">{job.role}</h4>
                   <p className="text-gray-400">{job.company} | {job.duration}</p>
                   <p className="text-gray-300 mt-2">{job.description}</p>
                 </div>

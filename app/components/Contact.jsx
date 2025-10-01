@@ -48,7 +48,7 @@ const Contact = () => {
         className='w-full p-4 outline-none border-[0.5px] border-[#22D3EE] rounded-md focus:border-[#8B5CF6] focus:shadow-[0_0_10px_#8B5CF6] transition-colors duration-300 mb-6' name='message'>
         </textarea>
         <button type='submit' 
-        className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-gradient-to-r from-[#8B5CF6] to-[#22D3EE] font-medium rounded-full mx-auto shadow-md hover:shadow-[#22D3EE]/60 transition-all duration-300'>
+        className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-gradient-to-r from-[#8B5CF6] to-[#22D3EE] hover:from-[#06B6D4] hover:to-[#8B5CF6] font-medium rounded-full mx-auto shadow-md transition-all duration-300'>
         Submit
         </button>
         <p className='mt-4 text-center'>{result}</p>

@@ -27,12 +27,12 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScroll ? "bg-[#0D0D0D] bg-opacity-50 backdrop-blur-lg shadow-sm" : "bg-[#0D0D0D]"}`}>
+      <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-2 flex items-center justify-between z-50 ${isScroll ? "bg-[#0D0D0D] bg-opacity-50 backdrop-blur-lg shadow-sm" : "bg-[#0D0D0D]"}`}>
         <a href="#top">
-          <Image src={assets.logo_white} alt="" className='w-28 cursor-pointer mr-14' />
+          <Image src={assets.logo_white} alt="" className='w-20 sm:w-24 md:w-28 cursor-pointer mr-6 sm:mr-10 md:mr-14' />
         </a>
 
-        <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "text-white" : "bg-[#0D0D0D] text-white shadow-sm bg-opacity-50"}`}>
+        <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-6 py-2 ${isScroll ? "text-white" : "bg-[#0D0D0D] text-white shadow-sm bg-opacity-50"}`}>
           <li className='hover:text-[#22D3EE]'><a href="#top">Home</a></li>
           <li className='hover:text-[#22D3EE]'><a href="#about">About me</a></li>
           {/* <li className='hover:text-[#22D3EE]'><a href="#services">Services</a></li> */}

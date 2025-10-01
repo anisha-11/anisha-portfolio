@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Header = () => {
   return (
-    <div className='relative w-full text-center min-h-screen flex items-center justify-center gap-4 px-[6%] py-16 '>
+    <div className='relative w-full text-center min-h-screen flex items-center justify-center gap-4 px-[6%] pt-28 pb-16 '>
       <div className='absolute top-0 left-1/4 w-56 h-56 bg-[#8B5CF6]/60 rounded-full filter blur-3xl -z-10'
       style={{ animation: 'floatingSlow 6s ease-in-out infinite' }}>
     </div>

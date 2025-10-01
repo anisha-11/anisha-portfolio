@@ -44,7 +44,7 @@ const volunteering = [
               {experience.map((job, idx) => (
                 <div key={idx} className="bg-gray-800 p-4 rounded-xl shadow hover:shadow-xl transition-shadow duration-300 text-center md:text-left">
                   <h4 className="font-bold text-[#06B6D4]">{job.role}</h4>
-                  <p className="text-gray-400">{job.company} | {job.duration}</p>
+                  <p className="text-gray-400 ">{job.company} | {job.duration}</p>
                   <p className="text-gray-300 mt-2">{job.description}</p>
                 </div>
               ))}
@@ -57,7 +57,7 @@ const volunteering = [
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {education.map((edu, idx) => (
                 <div key={idx} className="bg-gray-800 p-4 rounded-xl shadow hover:shadow-xl transition-shadow duration-300 text-center md:text-left">
-                  <h4 className="font-bold">{edu.degree}</h4>
+                  <h4 className="font-bold text-[#06B6D4]">{edu.degree}</h4>
                   <p className="text-gray-400">{edu.school} | {edu.duration}</p>
                   <p className="text-gray-300 mt-2">{edu.description}</p>
                 </div>
@@ -71,7 +71,7 @@ const volunteering = [
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {volunteering.map((vol, idx) => (
                 <div key={idx} className="bg-gray-800 p-4 rounded-xl shadow hover:shadow-xl transition-shadow duration-300 text-center md:text-left">
-                  <h4 className="font-bold">{vol.role}</h4>
+                  <h4 className="font-bold text-[#06B6D4]">{vol.role}</h4>
                   <p className="text-gray-400">{vol.organization} | {vol.duration}</p>
                   <p className="text-gray-300 mt-2">{vol.description}</p>
                 </div>

@@ -104,16 +104,12 @@ const volunteering = [
     <section className=" bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] text-white py-20 px-6 md:px-20">
       <div id='about' className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12">
         
-        {/* Left: Profile Image */}
-        {/* <div className="flex-shrink-0 w-64 md:w-80 mx-auto md:mx-0">
-          <Image src={assets.profile_picture} alt="" width={320} height={320} className="rounded-2xl border-2 border-[#22D3EE]/30 shadow-lg shadow-[#8B5CF6]/20"/>
-        </div> */}
-        
         {/* Right: Content */}
         <div className="flex-1 space-y-8">
           
           {/* Intro */}
           <div>
+            <h1 className='text-5xl font-bold mb-10'>About Me</h1>
             <h2 className="text-3xl font-bold mb-4">Hi, I'm Anisha!</h2>
             <p>My tech journey began at Makers Academy, where I discovered my passion for web development. I started as a Junior Web Developer, designing solutions tailored to clients’ needs and optimising websites for SEO. Driven by curiousity and a desire to grow, 
             I transitioned into Salesforce, becoming a Certified Developer. Today, I collaborate with a dynamic team of building features that create real impact and drive meaningful business results.

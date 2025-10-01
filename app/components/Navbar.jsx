@@ -34,7 +34,7 @@ const Navbar = () => {
 
         <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-6 py-2 ${isScroll ? "text-white" : "bg-[#0D0D0D] text-white shadow-sm bg-opacity-50"}`}>
           <li className='hover:text-[#22D3EE]'><a href="#top">Home</a></li>
-          <li className='hover:text-[#22D3EE]'><a href="#about">About me</a></li>
+          <li className='hover:text-[#22D3EE]'><a href="#about">About</a></li>
           {/* <li className='hover:text-[#22D3EE]'><a href="#services">Services</a></li> */}
           <li className='hover:text-[#22D3EE]'><a href="#work">My Work</a></li>
           <li className='hover:text-[#22D3EE]'><a href="#contact">Contact</a></li>
@@ -53,7 +53,7 @@ const Navbar = () => {
         <ul ref={sideMenuRef} className='flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-0 top-0 bottom-0 w-64 z-50 h-screen bg-[#121212] text-white transition duration-500 tranform translate-x-[16rem]'>
           <div className='absolute right-6 top-6 cursor-pointer hover:text-[#22D3EE]' onClick={closeMenu}>Close</div>
           <li><a onClick={closeMenu} href="#top" className='hover:text-[#22D3EE]'>Home</a></li>
-          <li><a onClick={closeMenu} href="#about" className='hover:text-[#22D3EE]'>About me</a></li>
+          <li><a onClick={closeMenu} href="#about" className='hover:text-[#22D3EE]'>About</a></li>
           <li><a onClick={closeMenu} href="#services" className='hover:text-[#22D3EE]'>Services</a></li>
           <li><a onClick={closeMenu} href="#work" className='hover:text-[#22D3EE]'>My Work</a></li>
           <li><a onClick={closeMenu} href="#contact" className='hover:text-[#22D3EE]'>Contact</a></li>

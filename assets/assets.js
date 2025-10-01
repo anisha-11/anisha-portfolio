@@ -28,21 +28,21 @@ export const assets = {
 
 export const workCards = [
   {
-    title: 'Project 1',
-    description: 'Website',
-    bgImage: '/logo.png'
+    title: 'Chitter',
+    description: 'Twitter clone website using GET/POST requests and TablePlus to store data and make posts.',
+    bgImage: assets.chitter
   },
   
   {
-    title: 'Project 2',
-    description: 'App',
-    bgImage: '/logo.png'
+    title: 'Acebook',
+    description: 'Facebook clone using MERN stack that allows you to post, comment and upload images.',
+    bgImage: assets.acebook
   },
 
   {
-    title: 'Project 3',
-    description: 'Mobile App',
-    bgImage: '/logo.png'
+    title: 'ReelPlaces',
+    description: 'A site using IMDb and Google Maps API to show movies/tv series that were filmed in a nearby location the user inputted',
+    bgImage: assets.reel_places
   },
 ];
 

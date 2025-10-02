@@ -36,12 +36,12 @@ const Navbar = () => {
           <li className='hover:text-[#22D3EE]'><a href="#top">Home</a></li>
           <li className='hover:text-[#22D3EE]'><a href="#about">About</a></li>
           {/* <li className='hover:text-[#22D3EE]'><a href="#services">Services</a></li> */}
-          <li className='hover:text-[#22D3EE]'><a href="#work">My Work</a></li>
-          <li className='hover:text-[#22D3EE]'><a href="#contact">Contact</a></li>
+          <li className='hover:text-[#22D3EE]'><a href="#work">Projects</a></li>
+          {/* <li className='hover:text-[#22D3EE]'><a href="#contact">Contact</a></li> */}
         </ul>
 
         <div className='flex items-center gap-4'>
-          <button className='text-white hover:text-[#22D3EE]'>Dark</button>
+          {/* <button className='text-white hover:text-[#22D3EE]'>Dark</button> */}
 
           <a href="#contact" className='hidden lg:flex items-center gap-3 px-10 py-2.5 bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] hover:from-[#06B6D4] hover:to-[#8B5CF6] text-white shadow-md rounded-full ml-4'>Contact</a>
 
@@ -55,7 +55,7 @@ const Navbar = () => {
           <li><a onClick={closeMenu} href="#top" className='hover:text-[#22D3EE]'>Home</a></li>
           <li><a onClick={closeMenu} href="#about" className='hover:text-[#22D3EE]'>About</a></li>
           <li><a onClick={closeMenu} href="#services" className='hover:text-[#22D3EE]'>Services</a></li>
-          <li><a onClick={closeMenu} href="#work" className='hover:text-[#22D3EE]'>My Work</a></li>
+          <li><a onClick={closeMenu} href="#work" className='hover:text-[#22D3EE]'>Projects</a></li>
           <li><a onClick={closeMenu} href="#contact" className='hover:text-[#22D3EE]'>Contact</a></li>
         </ul>
       </nav>

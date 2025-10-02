@@ -27,37 +27,38 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-2 flex items-center justify-between z-50 ${isScroll ? "bg-[#0D0D0D] bg-opacity-50 backdrop-blur-lg shadow-sm" : "bg-[#0D0D0D]"}`}>
+      {/* <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-2 flex items-center justify-between z-50 ${isScroll ? "bg-[#0D0D0D] bg-opacity-50 backdrop-blur-lg shadow-sm" : "bg-[#0D0D0D]"}`}> */}
+      <nav className={`fixed top-6 left-1/2 -translate-x-1/2 z-50 flex items-center justify-between px-6 py-3 rounded-full transition-all duration-300 ${isScroll ? "backdrop-blur-lg bg-black/40 shadow-lg w-[90%] md:w-[70%]" : "bg-transparent w-full md:w-[80%]"}`}>
         <a href="#top">
           <Image src={assets.logo_white} alt="" className='w-20 sm:w-24 md:w-28 cursor-pointer mr-6 sm:mr-10 md:mr-14' />
         </a>
 
         <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-6 py-2 ${isScroll ? "text-white" : "bg-[#0D0D0D] text-white shadow-sm bg-opacity-50"}`}>
-          <li className='hover:text-[#22D3EE]'><a href="#top">Home</a></li>
-          <li className='hover:text-[#22D3EE]'><a href="#about">About</a></li>
+          <li className='relative group'><a href="#top">Home</a><span className="absolute left-0 bottom-0 h-[2px] w-0 bg-[#22D3EE] group-hover:w-full transition-all duration-300"></span></li>
+          <li className='relative group'><a href="#about">About</a><span className="absolute left-0 bottom-0 h-[2px] w-0 bg-[#22D3EE] group-hover:w-full transition-all duration-300"></span></li>
           {/* <li className='hover:text-[#22D3EE]'><a href="#services">Services</a></li> */}
-          <li className='hover:text-[#22D3EE]'><a href="#work">Projects</a></li>
+          <li className='relative group'><a href="#work">Projects</a><span className="absolute left-0 bottom-0 h-[2px] w-0 bg-[#22D3EE] group-hover:w-full transition-all duration-300"></span></li>
           {/* <li className='hover:text-[#22D3EE]'><a href="#contact">Contact</a></li> */}
         </ul>
 
         <div className='flex items-center gap-4'>
           {/* <button className='text-white hover:text-[#22D3EE]'>Dark</button> */}
 
-          <a href="#contact" className='hidden lg:flex items-center gap-3 px-10 py-2.5 bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] hover:from-[#06B6D4] hover:to-[#8B5CF6] text-white shadow-md rounded-full ml-4'>Contact</a>
+          <a href="#contact" className='hidden lg:flex items-center gap-3 px-8 py-2.5 bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] hover:from-[#06B6D4] hover:to-[#8B5CF6] hover:scale-105 transition-all duration-300 text-white shadow-md rounded-full ml-4'>Contact</a>
 
-          <button className='block md:hidden ml-3 text-white' onClick={openMenu}>Menu</button>
+          {/* <button className='block md:hidden ml-3 text-white' onClick={openMenu}>Menu</button> */}
         </div>
         
         {/* mobile menu */}
 
-        <ul ref={sideMenuRef} className='flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-0 top-0 bottom-0 w-64 z-50 h-screen bg-[#121212] text-white transition duration-500 tranform translate-x-[16rem]'>
+        {/* <ul ref={sideMenuRef} className='flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-0 top-0 bottom-0 w-64 z-50 h-screen bg-[#121212] text-white transition duration-500 tranform translate-x-[16rem]'>
           <div className='absolute right-6 top-6 cursor-pointer hover:text-[#22D3EE]' onClick={closeMenu}>Close</div>
           <li><a onClick={closeMenu} href="#top" className='hover:text-[#22D3EE]'>Home</a></li>
           <li><a onClick={closeMenu} href="#about" className='hover:text-[#22D3EE]'>About</a></li>
           <li><a onClick={closeMenu} href="#services" className='hover:text-[#22D3EE]'>Services</a></li>
           <li><a onClick={closeMenu} href="#work" className='hover:text-[#22D3EE]'>Projects</a></li>
           <li><a onClick={closeMenu} href="#contact" className='hover:text-[#22D3EE]'>Contact</a></li>
-        </ul>
+        </ul> */}
       </nav>
     </>
   )

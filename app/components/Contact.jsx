@@ -39,12 +39,12 @@ const Contact = () => {
 
       <form onSubmit={onSubmit} className='max-w-2xl mx-auto'>
         <div className='grid grid-cols-2 gap-6 mt-10 mb-8'>
-          <input type="text" placeholder='Enter your name' required 
+          <input type="text" placeholder='Name' required 
           className='flex-1 p-3 outline-none border-[0.5px] border-[#22D3EE] rounded-md focus:border-[#8B5CF6] focus:shadow-[0_0_10px_#8B5CF6] transition-colors duration-300' name='name'/>
-          <input type="email" placeholder='Enter your email' required 
+          <input type="email" placeholder='Email' required 
           className='flex-1 p-3 outline-none border-[0.5px] border-[#22D3EE] rounded-md focus:border-[#8B5CF6] focus:shadow-[0_0_10px_#8B5CF6] transition-colors duration-300' name='email'/>
         </div>
-        <textarea rows="6" placeholder='Enter your message' required
+        <textarea rows="6" placeholder='Message' required
         className='w-full p-4 outline-none border-[0.5px] border-[#22D3EE] rounded-md focus:border-[#8B5CF6] focus:shadow-[0_0_10px_#8B5CF6] transition-colors duration-300 mb-6' name='message'>
         </textarea>
         <button type='submit' 

@@ -11,7 +11,7 @@ const Work = () => {
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 my-10'>
         {workCards.map((project, index)=>(
           <div key={index} 
-          className='aspect-square bg-no-repeat bg-cover bg-center rounded-2xl relative cursor-pointer group overflow-hidden shadow-lg hover:shadow-[#8B5CF6]/40 transition-all duration-300' 
+          className='text-center md:text-left aspect-square bg-no-repeat bg-cover bg-center rounded-2xl relative cursor-pointer group overflow-hidden shadow-lg hover:shadow-[#8B5CF6]/40 transition-all duration-300' 
           style={{backgroundImage: `url(${project.bgImage.src})`}}>
             <div className='bg-black w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between'>
               <div>
